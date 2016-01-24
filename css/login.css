@@ -1,0 +1,37 @@
+
+section#banner{
+    padding: 3em ;
+}
+
+dd{
+    padding: 0 30em 2em 30em;
+}
+
+input{
+    text-align: center;
+    color: aliceblue;
+}
+
+h4.error,
+h4.error_d,
+h4.error_img{
+    margin: 0.5% auto;
+    font-size: 18px;
+    text-align: center;
+    color: red;
+}
+#delete_btn {
+  background-color: #ff0063;
+  border-radius: 30px;
+  border: 0;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  height: 2.85em;
+  line-height: 2.95em;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}

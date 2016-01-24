@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: arial;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            text-align: center;
+            background-color: #39C;
+            transition: background-color 1s linear;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            -webkit-transition: all 1s linear;
+        }
+
+        li a:hover {
+            -webkit-transform: skewX(25deg);
+        }
+    </style>
+    <title>Transition</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#" class="tra">*いち*</a></li>
+                <li><a href="#" class="tra">*にい*</a></li>
+                <li><a href="#" class="tra">*さん*</a></li>
+                <li><a href="#" class="tra">*よん*</a></li>
+                <li><a href="#" class="tra">*ごう*</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script type="text/javascript">
+    $(".tra").on("oTransitionEnd mozTransitionEnd webkitTransitionEnd transitionend",function(){
+        console.log("transitionend");
+    });
+    </script>
+</body>
+
+</html>
